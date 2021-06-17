@@ -75,7 +75,7 @@ button{
   font-size: 16px;
   color:white;
   font-family: "Trirong", serif;
-  display: block;
+  display: inline-block;
   border-radius: 5px;
   box-shadow: 0 5px #999;
 }
