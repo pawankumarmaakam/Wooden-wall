@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wooden Wall AR-DC Motor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+	</head> 
+
+<body background="woodenwall.png">
+	
+	
+	<h1 style="color:#d1712c; font-size:450%;text-align: center;">Wooden Wall</h1>
+	
+
+	<p style="text-align: center;font-color:white;"><a href="..\Wooden Wall AR.html"><img src="Home.png" alt="Home" style="img-align: center;width:50px;height:50px;border:0"></a></p>
+	<hr>
+		<div id="card1">
+		<model-viewer id="model"  
+                  src="DC motor.glb"
+                  alt="DC motor"
+                  shadow-intensity="1"
+                  camera-controls
+                  autoplay ar>
+			<div class="btn-container">
+				<button type="button" onclick="ani1()">Disassembly</button>
+				<button type="button" onclick="ani2()">Assembly</button>
+				<button type="button" onclick="ani3()">Working</button>
+				
+				</div>
+			</model-viewer>
+		<section class="attribution">
+			<span>
+				<h1 style="color:#d1712c;">DC motor</h1>
+				<span>This experience details about the Dissassembly, Assembly and Working of  DC Motor.</span>
+				<hr>
+				</span>
+			</section>
+<script>
+		var modelViewer =document.getElementById('model');
+		function ani1(){
+			modelViewer.animationName ='Disassembly';
+			}
+		function ani2(){
+			modelViewer.animationName = 'Assembly';
+			}
+		function ani3(){
+			modelViewer.animationName = 'Working';
+			}
+			</script>
+		</div>
+		
+	
+	<script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+	</script>
+	<script nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+	 </script>
+	<hr>
+	<div style="text-align:right;
+			padding:15px;margin-top:2px;font-family: "Trirong", serif;color:#d1712c ">
+			-a page by PAWAN KUMAR MAAKAM
+			</div>
+	</body>
+	</html>
