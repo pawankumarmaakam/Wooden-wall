@@ -71,7 +71,40 @@
 				</span>
 			</section>
 		</div>
-
+		<div id="card1">
+		<model-viewer id="model"  
+                  src="DC motor.glb"
+                  alt="DC motor"
+                  shadow-intensity="1"
+                  camera-controls
+                  autoplay ar>
+			<div class="btn-container">
+				<button type="button" onclick="ani1()">Disassembly</button>
+				<button type="button" onclick="ani2()">Assembly</button>
+				<button type="button" onclick="ani3()">Working</button>
+				
+				</div>
+			</model-viewer>
+		<section class="attribution">
+			<span>
+				<h1>DC motor</h1>
+				<span>This experience details about the Dissassembly, Assembly and Working of  DC Motor.</span>
+				<hr>
+				</span>
+			</section>
+<script>
+		var modelViewer =document.getElementById('model');
+		function ani1(){
+			modelViewer.animationName ='Disassembly';
+			}
+		function ani2(){
+			modelViewer.animationName = 'Assembly';
+			}
+		function ani3(){
+			modelViewer.animationName = 'Working';
+			}
+			</script>
+		</div>
 		
 	
 	<script type="module"
